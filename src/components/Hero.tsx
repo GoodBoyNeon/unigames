@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "motion/react";
 import { GAMES } from "../data/games";
 import GameCard from "../components/GameCard";
@@ -130,7 +131,7 @@ export default function Hero() {
                   className="bg-gray-900 border-2 border-gray-700 p-4 group hover:border-yellow-400 transition-colors"
                 >
                   <div className="aspect-square bg-gray-800 mb-4 overflow-hidden relative border-2 border-black">
-                    <img
+                    <Image
                       src={game.thumbnail}
                       alt={game.title}
                       className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
