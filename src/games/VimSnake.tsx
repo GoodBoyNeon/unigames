@@ -444,7 +444,7 @@ export default function SnakeGame() {
                     onClick={resetGame}
                     className="w-full bg-purple-600 text-white border-4 border-black py-2 md:py-3 font-black uppercase text-xs md:text-sm hover:bg-black transition-all shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none"
                   >
-                    One more try (you got this)
+                    Play Again
                   </button>
                 </div>
               ) : (
