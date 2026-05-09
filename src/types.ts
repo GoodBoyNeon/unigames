@@ -1,10 +1,11 @@
+import { StaticImageData } from "next/image";
 import { ComponentType } from "react";
 
 export interface Game {
   id: string;
   title: string;
   description: string;
-  thumbnail: string;
+  thumbnail: StaticImageData;
   category: string;
   featured: boolean;
   controls: string[];

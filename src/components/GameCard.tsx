@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import Link from "next/link";
 import { Game } from "../types";
 import { Heart, Play } from "lucide-react";
+import Image from "next/image";
 
 interface GameCardProps {
   key?: string | number;
@@ -24,7 +25,7 @@ export default function GameCard({
       className="group relative bg-white border-4 border-black overflow-hidden shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[12px_12px_0px_0px_rgba(147,51,234,1)] transition-all"
     >
       <div className="aspect-video overflow-hidden border-b-4 border-black relative">
-        <img
+        <Image
           src={game.thumbnail}
           alt={game.title}
           className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
