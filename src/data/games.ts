@@ -1,3 +1,4 @@
+import dynamic from "next/dynamic";
 import { Game } from "../types";
 
 export const GAMES: Game[] = [
@@ -12,7 +13,7 @@ export const GAMES: Game[] = [
     featured: true,
     controls: ["HJKL to Move"],
     tags: ["snake-game", "simple", "vim"],
-    embedUrl: "https://poki.com/en/g/drive-mad", // Placeholder embed for demo
+    component: dynamic(() => import("@/games/VimSnake")),
   },
   {
     id: "guessing-game",

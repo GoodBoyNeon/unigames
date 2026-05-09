@@ -1,8 +1,9 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono, Space_Grotesk } from "next/font/google";
-import "./globals.css";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { Toaster } from "sonner";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
@@ -49,7 +50,34 @@ export default function RootLayout({
 
           <Navbar />
 
-          <main className="min-h-[calc(100vh-200px)]">{children}</main>
+          <main className="min-h-[calc(100vh-200px)]">
+            {children}
+            <Toaster
+              position="bottom-center"
+              closeButton={true}
+              toastOptions={{
+                unstyled: true,
+                closeButton: true,
+                classNames: {
+                  toast: `
+                          font-mono flex items-center gap-3
+        px-4 py-3 w-80
+        bg-white border-2 rounded-none
+        shadow-[3px_3px_0px_currentColor]
+                  `,
+                  title:
+                    "text-xs font-bold tracking-widest uppercase text-black",
+                  description: "text-[11px] tracking-wide text-gray-500 mt-0.5",
+                  closeButton: "text-gray-400 hover:text-black position-left",
+
+                  success: "border-purple-600 text-purple-600",
+                  error: "border-red-500 text-red-500",
+                  info: "border-blue-500 text-blue-500",
+                  warning: "border-amber-500 text-amber-500",
+                },
+              }}
+            />
+          </main>
           <Footer />
         </div>
       </body>

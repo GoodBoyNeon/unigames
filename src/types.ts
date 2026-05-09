@@ -1,3 +1,5 @@
+import { ComponentType } from "react";
+
 export interface Game {
   id: string;
   title: string;
@@ -7,7 +9,7 @@ export interface Game {
   featured: boolean;
   controls: string[];
   tags: string[];
-  embedUrl: string;
+  component: ComponentType;
 }
 
 export type Category =
