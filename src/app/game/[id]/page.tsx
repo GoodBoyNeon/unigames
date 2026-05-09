@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "motion/react";
+import Image from "next/image";
 import { GAMES } from "@/data/games";
 import {
   Maximize2,
@@ -218,7 +219,7 @@ export default function GameDetail() {
 
         {/* Sidebar / Related */}
         <div className="space-y-8">
-          <div className="bg-purple-600 p-6 border-4 border-black border-l-[12px]">
+          <div className="bg-purple-600 p-6 border-4 border-black border-l-12">
             <h3 className="font-sans font-black uppercase text-white tracking-widest mb-4">
               You Might Like
             </h3>
@@ -229,7 +230,7 @@ export default function GameDetail() {
                   key={g.id}
                   className="block bg-white border-2 border-black p-3 hover:translate-x-1 hover:-translate-y-1 transition-all shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-x-0 active:translate-y-0"
                 >
-                  <img
+                  <Image
                     src={g.thumbnail}
                     alt={g.title}
                     className="aspect-video w-full object-cover mb-2 border border-black"
