@@ -31,7 +31,7 @@ export default function Hero() {
   return (
     <div className="space-y-16 pb-16">
       {/* Hero Section */}
-      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-purple-600 border-b-8 border-black">
+      <section className="relative min-h-[65vh] flex items-center justify-center overflow-hidden bg-purple-600 border-b-8 border-black">
         <div
           className="absolute inset-0 opacity-20 pointer-events-none"
           style={{
@@ -51,7 +51,7 @@ export default function Hero() {
               Level Up Your Fun
             </span>
           </div>
-          <h1 className="text-6xl md:text-8xl font-black text-white italic tracking-tighter uppercase mb-8 drop-shadow-[8px_8px_0px_rgba(0,0,0,1)]">
+          <h1 className="text-6xl md:text-7xl font-black text-white italic tracking-tighter uppercase mb-8 drop-shadow-[8px_8px_0px_rgba(0,0,0,1)]">
             Pure Indie
             <br />
             Arcade <span className="text-yellow-400">Magic</span>
