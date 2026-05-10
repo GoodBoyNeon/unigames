@@ -9,8 +9,8 @@
 
 2. Games
    - [x] Snake Game
+   - [x] Galaxy Defend
    - [ ] Guessing Game
    - [ ] HangMan
    - [ ] Memory Match Cards
    - [ ] TicTacToe
-   - [ ] Rock Paper Scissors
